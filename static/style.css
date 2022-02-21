@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+html{
+    scroll-snap-align: center;
+}
+#navbar ul{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    list-style: none;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo{
+    margin-right: 200px;
+}
+
+#navbar ul li a{
+    display: flex;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.11);
+    color: rgb(255, 255, 255);
+    margin: 10px 40px;
+    font-size: 20px;
+    border-radius:10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+    color: rgb(253, 253, 253);
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+content{
+    display: flex;
+    flex-direction:column;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vm;
+}
+section{
+    display: flex;
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(255, 255, 255);   
+}
+
+#intro{
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    align-self: center;
+    background: url('background.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+#menu{ 
+    display: flex;
+    flex-direction: column; 
+    background:url('bg4.jpg') no-repeat center center;
+    background-size: 100% 100%;
+     
+  
+}
+#menuitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.menubox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.menubox h4{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+.menubox p{
+    color: black;
+    font-size:15px;
+    padding: 5px;
+}
+.menubox img{
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+}
+#sponcer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background:url('bg3.jpg') no-repeat center center ;
+    background-size: 100% 100%;
+}
+#icon{
+    display: flex;
+}
+#icon img{
+    width: 250px;
+    height: 250px;
+    margin:50px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    background: url('bg2.jpeg') no-repeat center center;
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: 1.5;
+    
+
+}
+label{
+    font-size: 20px;
+    margin: 5px;
+    width: 60%;
+
+}
+input{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    width: 800px;
+    height: 30px;
+    padding:5px 10px;
+    margin: 10px;
+}
+textarea{
+    border: 2px solid black;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 10px;
+    padding:5px 10px;
+    width: 800px;
+    height: 200px;
+    margin-left: 8%;
+}
+
+#more{
+    display: inline-block;
+}
+#btn{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(26, 26, 139);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 50%;
+}
+
+
+/* Creating responsive to mobile */
+@media(max-width:800px){
+    #navbar{
+        flex-direction: column;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        position: absolute;
+    }
+    #logo{
+        margin-right: 0px;
+        
+    }
+    #intro{
+        padding-top: 100px;
+        
+    }
+    #menu{
+        height: auto;
+        
+    }
+    #menuitem{
+        flex-direction: column;
+    }
+    #sponcer{
+        height: auto;
+       
+    }
+    #icon{
+        flex-direction: column;
+    }
+    input{
+        border: 2px solid black;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: 30px;
+        padding:5px 10px;
+        margin: 0px;
+    }
+    textarea{
+        width: 100%;
+        margin: 0px;
+    }
+
+
+}
